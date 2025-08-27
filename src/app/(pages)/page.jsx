@@ -10,7 +10,7 @@ const page = () => {
         <div className="background-wrapper relative">
           <div className="container mx-auto">
             <div className="w-full lg:w-3/5 text-center lg:text-start pb-[20px] lg:pb-[45px]">
-              <h1 className="font-behind-nineties font-medium leading-[100%] text-gray ">
+              <h1 className="font-behind-nineties font-medium leading-[100%] text-gray">
                 Glow{" "}
                 <span className="text-primary italic">Naturally, Shine</span>{" "}
                 Confidently
@@ -129,8 +129,31 @@ const page = () => {
           </div>
         </div>
       </section>
-      <section className="service-section">
-      
+
+      <section className="service-section overflow-hidden py-80">
+        <div className="container mx-auto!">
+          <div className="flex flex-col">
+            <div className="flex flex-col lg:flex-row gap-5">
+              <div className="w-full lg:w-[58%]">
+                <h2 className="font-behind-nineties leading-[100%] text-gray">
+                  {" "}
+                  <span className="text-primary">Effective,</span> Gentle, &
+                  Science-Back <span className="text-primary">Skincare</span>
+                </h2>
+                <Image
+                  src={"./images/Sparkle Line.webp"}
+                  width={298}
+                  height={60}
+                  alt="logo"
+                  unoptimized={true}
+                  className="w-full h-full object-cover hidden lg:block mt-10"
+                />
+              </div>
+              <div className="w-full lg:w-[58%]"></div>
+            </div>
+            <div></div>
+          </div>
+        </div>
       </section>
     </>
   );
