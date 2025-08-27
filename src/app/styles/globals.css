@@ -1,1 +1,520 @@
 @import "tailwindcss";
+
+body {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: var(--font-poppins);
+  color: #8a8a8a;
+  background: url(/images/Noise-&-Texture.png) no-repeat 50%, #fffcf9;
+  background-size: cover;
+}
+
+.font-behindthetineties {
+  font-family: var(--font-behind-nineties);
+}
+
+.montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.inter {
+  font-family: var(--font-inter);
+}
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 45px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+/* .fs-14 {
+  font-size: 14px; => 13px, 13px, 12px, 12px
+}
+.fs-16 {
+  font-size: 16px;
+} */
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-35 {
+  font-size: 35px;
+}
+
+.fs-38 {
+  font-size: 38px;
+}
+
+.fs-80 {
+  font-size: 80px;
+}
+
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.btn {
+  padding: 10px 24px;
+  font-size: 18px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #911e3d;
+}
+
+.btn-lg {
+  padding: 14px 24px;
+  border-radius: 10px;
+}
+
+.btn-sm {
+  padding: 10px 27px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 13px 15px;
+}
+
+/* header */
+.logo-wrapper {
+  height: 50px;
+  width: 120px;
+}
+
+.navbar {
+  z-index: 100;
+  width: calc(100% - 100px);
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+
+.navbar.scroll-down {
+  z-index: 100;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #f4ede480;
+  box-shadow: 0 0 24px #00000026;
+}
+
+.navbar.scroll-down .nav-container {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: none;
+  border-radius: none;
+  max-width: 1140px;
+  padding: 8px 20px;
+  box-shadow: none;
+}
+
+.navbar .nav-container {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: #f4ede480;
+  border-radius: 10px;
+  max-width: 1140px;
+  padding: 8px 20px;
+  box-shadow: 0 0 24px #00000026;
+}
+
+.navbar .nav-link.active,
+.navbar-section .nav-link:hover {
+  color: #911e3d;
+  font-weight: 400;
+}
+
+.navbar .nav-link {
+  padding: 10px 6px;
+  transition: all 0.2s;
+}
+
+.nav-icon {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-toggle-btn {
+  padding: 8px;
+}
+
+@media screen and (min-width: 1279.97px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (max-width: 1279.97px) {}
+
+@media screen and (max-width: 1023.97px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  /* .fs-14 {
+  font-size: 13px;
+}
+.fs-16 {
+  font-size: 15px;
+} */
+  .fs-18 {
+    font-size: 16px;
+  }
+
+  .fs-20 {
+    font-size: 18px;
+  }
+
+  .fs-35 {
+    font-size: 31px;
+  }
+
+  .fs-38 {
+    font-size: 38px;
+  }
+
+  .fs-80 {
+    font-size: 70px;
+  }
+
+  .py-40 {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .pt-50 {
+    padding-top: 45px;
+  }
+
+  .py-80 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .btn {
+    padding: 9px 22px;
+    font-size: 16px;
+    border-radius: 11px;
+  }
+
+  .btn-lg {
+    padding: 14px 24px;
+    border-radius: 10px;
+  }
+
+  .btn-sm {
+    padding: 9px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767.97px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  /* .fs-14 {
+  font-size: 13px; => 13px, 13px, 12px, 12px
+}
+.fs-16 {
+  font-size: 14px; => 15px, 14px, 13px, 12px
+} */
+  .fs-18 {
+    font-size: 14px;
+  }
+
+  .fs-20 {
+    font-size: 16px;
+  }
+
+  .fs-35 {
+    font-size: 28px;
+  }
+
+  .fs-38 {
+    font-size: 31px;
+  }
+
+  .fs-80 {
+    font-size: 60px;
+  }
+
+  .py-40 {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  .pt-40 {
+    padding-top: 33px;
+  }
+
+  .pt-50 {
+    padding-top: 41px;
+  }
+
+  .py-80 {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+
+  .btn-lg {
+    padding: 12px 20px;
+    border-radius: 9px;
+  }
+
+  .btn-sm {
+    padding: 9px 22px;
+    border-radius: 8px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 575.97px) {
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 33px;
+  }
+
+  h4 {
+    font-size: 19px;
+  }
+
+  /* .fs-14 {
+  font-size: 14px; => 13px, 13px, 12px, 12px
+}
+.fs-16 {
+  font-size: 16px; => 15px, 14px, 13px, 12px
+} */
+  .fs-18 {
+    font-size: 13px;
+  }
+
+  .fs-20 {
+    font-size: 16px;
+  }
+
+  .fs-35 {
+    font-size: 26px;
+  }
+
+  .fs-38 {
+    font-size: 29px;
+  }
+
+  .fs-80 {
+    font-size: 55px;
+  }
+
+  .py-40 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .pt-40 {
+    padding-top: 30px;
+  }
+
+  .pt-50 {
+    padding-top: 38px;
+  }
+
+  .py-80 {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .btn {
+    padding: 7px 18px;
+    font-size: 13px;
+    border-radius: 9px;
+  }
+
+  .btn-lg {
+    padding: 11px 18px;
+    border-radius: 8px;
+  }
+
+  .btn-sm {
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 399.97) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 70px;
+  }
+
+  h3 {
+    font-size: 45px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  /* .fs-14 {
+  font-size: 14px; => 13px, 13px, 12px, 12px
+}
+.fs-16 {
+  font-size: 16px; => 15px, 14px, 13px, 12px
+} */
+  .fs-18 {
+    font-size: 12px;
+  }
+
+  .fs-20 {
+    font-size: 14px;
+  }
+
+  .fs-35 {
+    font-size: 25px;
+  }
+
+  .fs-38 {
+    font-size: 28px;
+  }
+
+  .fs-80 {
+    font-size: 40px;
+  }
+
+  .py-40 {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  .pt-40 {
+    padding-top: 27px;
+  }
+
+  .pt-50 {
+    padding-top: 35px;
+  }
+
+  .py-80 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .btn {
+    padding: 6px 17px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .btn-lg {
+    padding: 10px 17px;
+    border-radius: 8px;
+  }
+
+  .btn-sm {
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+}

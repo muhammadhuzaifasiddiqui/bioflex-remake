@@ -1,13 +1,69 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Inter, Montserrat, Poppins } from "next/font/google";
+import "./styles/globals.css";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const behindthenineties = localFont({
+  src: [
+    {
+      path: "../../public/fonts/behind-the-nineties/Behind The Nineties Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/behind-the-nineties/Behind The Nineties Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/behind-the-nineties/Behind The Nineties Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/behind-the-nineties/Behind The Nineties Medium Italic.ttf",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/behind-the-nineties/Behind The Nineties Semi Bold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/behind-the-nineties/Behind The Nineties Semi Bold Italic.ttf",
+      weight: "600",
+      style: "italic",
+    },
+    {
+      path: "../../public/fonts/behind-the-nineties/Behind The Nineties Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/behind-the-nineties/Behind The Nineties Bold Italic.ttf",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-behind-nineties",
+  display: "swap",
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -19,9 +75,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${poppins.variable} ${montserrat.variable} ${behindthenineties.variable}`}>
         {children}
       </body>
     </html>

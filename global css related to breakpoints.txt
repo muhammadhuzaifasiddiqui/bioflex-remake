@@ -1,0 +1,104 @@
+1023.97px, 767.97px, 576.97px, 399.97px
+body {
+  font-size: 16px; => 15px, 14px, 13px, 12px
+}
+h1 {
+  font-size: 80px; => 70px, 60px, 55px, 40px
+}
+h2 {
+  font-size: 70px; => 60px, 50px, 42px, 35px
+}
+h3 {
+  font-size: 45px; => 40px, 36px, 33px, 30px 
+}
+h4 {
+  font-size: 24px; => 22px, 20px, 19px, 18px
+}
+/* .fs-14 {
+  font-size: 14px; => 13px, 13px, 12px, 12px
+}
+.fs-16 {
+  font-size: 16px; => 15px, 14px, 13px, 12px
+} */
+.fs-18 {
+  font-size: 18px; => 16px, 14px, 13px, 12px
+}
+.fs-20 {
+  font-size: 20px; => 18px, 16px, 15px, 14px
+}
+.fs-35 {
+  font-size: 35px; => 31px, 28px, 26px, 25px
+}
+.fs-38 {
+  font-size: 38px; => 34px, 31px, 29px, 28px
+}
+.fs-80{
+  font-size: 80px; => 70px, 60px, 55px, 40px
+}
+.py-40 {
+  padding-top: 40px; => 36px, 33px, 30px, 27px
+  padding-bottom: 40px; => 36px, 33px, 30px, 27px
+}
+.pt-40{
+  padding-top: 40px; => 36px, 33px, 30px, 27px
+}
+.pt-50 {
+  padding-top: 50px; => 45px, 41px, 38px, 36px, 35px
+}
+.py-80 {
+  padding-top: 80px; => 70px, 62px, 56px, 50px
+  padding-bottom: 80px; => 70px, 62px, 56px, 50px
+}
+.btn {
+  padding: 10px 24px; => 9px 22px, 8px 20px, 7px 18px, 6px 17px
+  font-size: 18px; => 16px, 14px, 13px, 12px
+  border-radius: 12px; => 11px, 10px, 9px, 8px
+  font-weight: 500;
+}
+.btn-primary {
+  color: white;
+  background-color: #911e3d;
+}
+.btn-lg {
+  padding: 14px 24px;  => 13px 22px, 12px 20px, 11px 18px, 10px 17px
+  border-radius: 10px; => 9px, 9px, 8px, 8px
+}
+.btn-sm {
+  padding: 10px 27px; => 9px 24px, 9px 22px, 8px 20px, 8px 18px
+  border-radius: 8px;
+  font-size: 14px; => 13px, 13px, 12px, 12px
+}
+.form-control {
+  border-radius: 8px;
+  padding: 13px 15px;
+}
+.text-primary {
+  color: #911e3d;
+}
+.text-dark {
+  color: #1f1f1f;
+}
+.text-secondary {
+  color: #8b8b8b;
+}
+.text-secondary-dark {
+  color: #3a3a3a;
+}
+.text-secondary-light {
+  color: #1f1f1fcc;
+}
+.text-grey {
+  color: #666;
+}
+.text-gold {
+  color: #c38a3e;
+}
+.text-grey-dark {
+  color: #3a3a3a;
+}
+.bg-primary {
+  background: #911e3d;
+}
+.bg-secondary {
+  background: #ffffff80;
+}
