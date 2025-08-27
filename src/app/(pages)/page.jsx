@@ -129,6 +129,9 @@ const page = () => {
           </div>
         </div>
       </section>
+      <section className="service-section">
+      
+      </section>
     </>
   );
 };

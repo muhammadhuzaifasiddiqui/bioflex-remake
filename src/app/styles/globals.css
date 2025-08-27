@@ -250,6 +250,8 @@ h4 {
   pointer-events: none;
 }
 
+/* service-section */
+
 @media screen and (min-width: 1279.97px) {
   .container {
     max-width: 1280px;
