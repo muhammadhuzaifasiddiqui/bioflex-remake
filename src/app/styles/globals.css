@@ -11,6 +11,7 @@ body {
 
 .font-behindthetineties {
   font-family: var(--font-behind-nineties);
+  font-size: large;
 }
 
 .montserrat {
