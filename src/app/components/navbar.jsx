@@ -49,22 +49,22 @@ const Navbar = () => {
               />
             </div>
             <div className="lg:flex hidden navbar-menu items-center justify-center gap-2 xl:gap-8">
-              <a className="fs-16 nav-link fw-normal active" href="#navbar">
+              <a className="fs-16 nav-link fw-normal" href="">
                 Home
               </a>
-              <a className="fs-16 nav-link font-normal" href="#trusted">
+              <a className="fs-16 nav-link" href="#trusted">
                 About
               </a>
-              <a className="fs-16 nav-link font-normal" href="#service">
+              <a className="fs-16 nav-link" href="#service">
                 Services
               </a>
-              <a className="fs-16 nav-link font-normal" href="#product">
+              <a className="fs-16 nav-link" href="#product">
                 Products
               </a>
-              <a className="fs-16 nav-link font-normal" href="#blog">
+              <a className="fs-16 nav-link" href="#blog">
                 Locations
               </a>
-              <a className="fs-16 nav-link font-normal" href="#book">
+              <a className="fs-16 nav-link" href="#book">
                 Articles
               </a>
             </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
                   className="w-full! h-full! object-cover cursor-pointer"
                 />
               </div>
-              <a href="#" className="btn btn-primary btn-sm fs-14 font-normal">
+              <a href="#" className="btn btn-primary btn-sm fs-14">
                 Login
               </a>
             </div>
@@ -135,7 +135,7 @@ const Navbar = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden absolute mt-2 left-0 right-0 z-10 overflow-hidden px-3 md:px-3.5 lg:px-5"
             >
-              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#f4ede4f6] font-normal rounded-[12px]">
+              <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#f4ede4f6] rounded-[12px]">
                 <li className="px-[6px] py-[10px]">
                   <Link
                     href={"/"}
