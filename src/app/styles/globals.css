@@ -104,20 +104,21 @@ h4 {
   padding-top: 20px;
 }
 
-.py-80 {
+.pt-80 {
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .px-40 {
   padding-left: 40px;
   padding-right: 40px;
 }
+
 img {
   width: auto;
   height: auto;
   max-width: 100%;
 }
+
 .btn {
   padding: 10px 24px;
   font-size: 18px;
@@ -328,9 +329,8 @@ img {
     padding-top: 45px;
   }
 
-  .py-80 {
+  .pt-80 {
     padding-top: 70px;
-    padding-bottom: 70px;
   }
 
   .mt-40 {
@@ -383,6 +383,10 @@ img {
 
   .book-appointment {
     padding: 25px 16px;
+    border-radius: 18px;
+  }
+
+  .book-appointment:before {
     border-radius: 18px;
   }
 }
@@ -455,9 +459,8 @@ img {
     margin-top: 26px;
   }
 
-  .py-80 {
+  .pt-80 {
     padding-top: 62px;
-    padding-bottom: 62px;
   }
 
   .px-40 {
@@ -506,6 +509,10 @@ img {
 
   .book-appointment {
     padding: 21px 13px;
+    border-radius: 16px;
+  }
+
+  .book-appointment:before {
     border-radius: 16px;
   }
 }
@@ -582,9 +589,8 @@ img {
     margin-top: 24px;
   }
 
-  .py-80 {
+  .pt-80 {
     padding-top: 56px;
-    padding-bottom: 56px;
   }
 
   .px-40 {
@@ -633,6 +639,10 @@ img {
 
   .book-appointment {
     padding: 18px 11px;
+    border-radius: 15px;
+  }
+
+  .book-appointment:before {
     border-radius: 15px;
   }
 }
@@ -706,9 +716,8 @@ img {
     margin-top: 20px;
   }
 
-  .py-80 {
+  .pt-80 {
     padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   .px-40 {
@@ -757,6 +766,10 @@ img {
 
   .book-appointment {
     padding: 15px 10px;
+    border-radius: 14px;
+  }
+
+  .book-appointment:before {
     border-radius: 14px;
   }
 }

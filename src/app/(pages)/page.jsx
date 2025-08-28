@@ -130,10 +130,10 @@ const page = () => {
         </div>
       </section>
 
-      <section className="service-section overflow-hidden py-80">
+      <section className="service-section overflow-hidden pt-80 px-3 sm:px-4 md:px-5">
         <div className="container mx-auto!">
           <div className="flex flex-col">
-            <div className="flex flex-col lg:flex-row gap-5">
+            <div className="flex flex-col lg:flex-row gap-5 justify-between">
               <div className="w-full lg:w-[58%]">
                 <h2 className="font-behind-nineties leading-[100%] text-gray">
                   {" "}
@@ -149,7 +149,29 @@ const page = () => {
                   className="w-full h-full object-cover hidden lg:block mt-10"
                 />
               </div>
-              <div className="w-full lg:w-[58%]"></div>
+              <div className="w-full lg:w-[58%] flex flex-col gap-3">
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium
+                    quis, sem. Nulla consequat massa quis enim. Donec pede
+                    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                    enim justo.
+                  </p>
+                </div>
+                <div className="mt-40">
+                  <a className="btn btn-primary" href="#">
+                    View All Services
+                  </a>
+                </div>
+              </div>
             </div>
             <div></div>
           </div>
