@@ -186,7 +186,7 @@ const page = () => {
                     className="w-full! h-full! object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
                   />
                   <div className="flex flex-col justify-between absolute inset-0 p-2 md:p-3 xl:p-5">
-                    <div className="btn-circle ms-auto ">
+                    <div className="btn-circle ms-auto group-hover:bg-[#911E3D]!">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="29"
@@ -195,26 +195,20 @@ const page = () => {
                         fill="none"
                       >
                         <path
+                          className="transition-transform duration-300 group-hover:stroke-white!"
                           d="M7.82715 7.3855L21.3339 7.38555L21.3339 20.8923"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                         <path
+                          className="transition-transform duration-300 group-hover:stroke-white!"
                           d="M21.3331 7.3857L6.96582 21.7529"
                           strokeWidth="2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                       </svg>
-                      {/* <Image
-                        src={"/images/service-card-arrow.svg"}
-                        width={20}
-                        height={20}
-                        alt="service-card-arrow"
-                        unoptimized={true}
-                        className="w-full! h-full! object-cover"
-                      /> */}
                     </div>
                     <div className="flex flex-wrap gap-1">
                       <div className="tag border-radius-20 leading-[125%]">
@@ -230,17 +224,143 @@ const page = () => {
                   </div>
                 </div>
                 <div className="mt-3.5">
-                  <h4 className="leading-[140%] text-light-gray font-medium">
+                  <h4 className="leading-[140%] text-light-gray font-medium line-clamp-1">
                     Lorem ipsum
                   </h4>
-                  <p className="leading-[125%]">
+                  <p className="leading-[125%] line-clamp-2">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo ligula.
+                    Aenean commodo ligula. Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Aenean commodo ligula. Lorem
+                    ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula. Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit. Aenean commodo ligula.
                   </p>
                 </div>
               </a>
-              <div className="">2</div>
-              <div className="">3</div>
+              <a className="service-card group" href="#">
+                <div className="img-wrapper border-radius-20 overflow-hidden relative">
+                  <Image
+                    src={"/images/service-card-2.png"}
+                    width={400}
+                    height={500}
+                    alt="service-card-2"
+                    unoptimized={true}
+                    className="w-full! h-full! object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
+                  <div className="flex flex-col justify-between absolute inset-0 p-2 md:p-3 xl:p-5">
+                    <div className="btn-circle ms-auto group-hover:bg-[#911E3D]!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                      >
+                        <path
+                          className="transition-transform duration-300 group-hover:stroke-white!"
+                          d="M7.82715 7.3855L21.3339 7.38555L21.3339 20.8923"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          className="transition-transform duration-300 group-hover:stroke-white!"
+                          d="M21.3331 7.3857L6.96582 21.7529"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div className="flex flex-wrap gap-1">
+                      <div className="tag border-radius-20 leading-[125%]">
+                        3 Session
+                      </div>
+                      <div className="tag border-radius-20 leading-[125%]">
+                        1 Session per month
+                      </div>
+                      <div className="tag border-radius-20 leading-[125%]">
+                        Prices Starting form 12000 PKR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-3.5">
+                  <h4 className="leading-[140%] text-light-gray font-medium line-clamp-1">
+                    Lorem ipsum
+                  </h4>
+                  <p className="leading-[125%] line-clamp-2">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula. Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Aenean commodo ligula. Lorem
+                    ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula. Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit. Aenean commodo ligula.
+                  </p>
+                </div>
+              </a>
+              <a className="service-card group" href="#">
+                <div className="img-wrapper border-radius-20 overflow-hidden relative">
+                  <Image
+                    src={"/images/service-card-3.png"}
+                    width={400}
+                    height={500}
+                    alt="service-card-3"
+                    unoptimized={true}
+                    className="w-full! h-full! object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                  />
+                  <div className="flex flex-col justify-between absolute inset-0 p-2 md:p-3 xl:p-5">
+                    <div className="btn-circle ms-auto group-hover:bg-[#911E3D]!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                      >
+                        <path
+                          className="transition-transform duration-500 group-hover:stroke-white!"
+                          d="M7.82715 7.3855L21.3339 7.38555L21.3339 20.8923"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          className="transition-transform duration-500 group-hover:stroke-white!"
+                          d="M21.3331 7.3857L6.96582 21.7529"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div className="flex flex-wrap gap-1">
+                      <div className="tag border-radius-20 leading-[125%]">
+                        3 Session
+                      </div>
+                      <div className="tag border-radius-20 leading-[125%]">
+                        1 Session per month
+                      </div>
+                      <div className="tag border-radius-20 leading-[125%]">
+                        Prices Starting form 12000 PKR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-3.5">
+                  <h4 className="leading-[140%] text-light-gray font-medium line-clamp-1">
+                    Lorem ipsum
+                  </h4>
+                  <p className="leading-[125%] line-clamp-2">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula. Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit. Aenean commodo ligula. Lorem
+                    ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    commodo ligula. Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit. Aenean commodo ligula.
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </div>

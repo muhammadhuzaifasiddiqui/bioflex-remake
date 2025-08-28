@@ -9,6 +9,12 @@ body {
   background-size: cover;
 }
 
+img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+
 .font-behind-nineties {
   font-family: var(--font-behind-nineties);
 }
@@ -146,10 +152,11 @@ img {
   padding: 15px;
   border-radius: 100px;
   background: rgba(255, 255, 255, 0.50);
+  transition: all 0.3s ease-in-out;
 }
 
-.btn-circle path{
-  stroke: white;
+.btn-circle path {
+  stroke: #911E3D;
 }
 
 .form-control {
@@ -268,11 +275,9 @@ img {
 }
 
 /* service-section */
-.service-card .img-wrapper,
-Image {
+.service-card .img-wrapper {
   height: 500px;
   width: 100%;
-  background-color: #fff;
 }
 
 .tag {
@@ -281,7 +286,6 @@ Image {
   color: white;
 }
 
-.
 
 @media screen and (min-width: 1279.97px) {
   .container {
@@ -289,7 +293,14 @@ Image {
   }
 }
 
-@media screen and (max-width: 1279.97px) {}
+@media screen and (max-width: 1279.97px) {
+
+  .service-card .img-wrapper,
+  Image {
+    height: 450px;
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 1023.97px) {
   body {
@@ -424,7 +435,7 @@ Image {
 
   .service-card .img-wrapper,
   Image {
-    height: 485px;
+    height: 440px;
     width: 100%;
   }
 }
@@ -562,7 +573,7 @@ Image {
 
   .service-card .img-wrapper,
   Image {
-    height: 470px;
+    height: 435px;
     width: 100%;
   }
 }
@@ -704,7 +715,7 @@ Image {
 
   .service-card .img-wrapper,
   Image {
-    height: 455px;
+    height: 430px;
     width: 100%;
   }
 }
@@ -843,7 +854,7 @@ Image {
 
   .service-card .img-wrapper,
   Image {
-    height: 440px;
+    height: 430px;
     width: 100%;
   }
 }
