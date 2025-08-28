@@ -27,6 +27,10 @@ img {
   font-family: var(--font-inter);
 }
 
+.text-gold {
+  color: #C38A3E;
+}
+
 .text-primary {
   color: #911E3D;
 }
@@ -114,6 +118,10 @@ h4 {
   padding-top: 80px;
 }
 
+.pb-80 {
+  padding-bottom: 80px;
+}
+
 .px-40 {
   padding-left: 40px;
   padding-right: 40px;
@@ -155,8 +163,12 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.btn-circle path {
+.service-card .img-wrapper .btn-circle path {
   stroke: #911E3D;
+}
+
+.product-card .img-wrapper .btn-circle path {
+  stroke: #292D32;
 }
 
 .form-control {
@@ -275,6 +287,7 @@ img {
 }
 
 /* service-section */
+.product-card .img-wrapper,
 .service-card .img-wrapper {
   height: 500px;
   width: 100%;
@@ -286,6 +299,10 @@ img {
   color: white;
 }
 
+/* product-section */
+.product-section {
+  background: #F4EDE4;
+}
 
 @media screen and (min-width: 1279.97px) {
   .container {
@@ -368,6 +385,10 @@ img {
 
   .pt-80 {
     padding-top: 70px;
+  }
+
+  .pb-80 {
+    padding-bottom: 70px;
   }
 
   .mt-40 {
@@ -512,6 +533,10 @@ img {
     padding-top: 62px;
   }
 
+  .pb-80 {
+    padding-bottom: 62px;
+  }
+
   .px-40 {
     padding-left: 22px;
     padding-right: 22px;
@@ -654,6 +679,10 @@ img {
     padding-top: 56px;
   }
 
+  .pb-80 {
+    padding-bottom: 56px;
+  }
+
   .px-40 {
     padding-left: 16px;
     padding-right: 16px;
@@ -791,6 +820,10 @@ img {
 
   .pt-80 {
     padding-top: 50px;
+  }
+
+  .pb-80 {
+    padding-bottom: 50px;
   }
 
   .px-40 {

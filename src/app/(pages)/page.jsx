@@ -7,13 +7,16 @@ const page = () => {
   return (
     <>
       <Navbar />
+      {/* HERO-SECTION */}
       <section className="hero-section px-40 pt-20">
         <div className="background-wrapper border-radius-20 relative">
           <div className="container mx-auto">
             <div className="w-full lg:w-3/5 text-center lg:text-start pb-[20px] lg:pb-[45px]">
-              <h1 className="font-behind-nineties font-medium leading-[100%] text-gray">
+              <h1 className="font-behind-nineties font-normal leading-[100%] text-gray">
                 Glow{" "}
-                <span className="text-primary italic">Naturally, Shine</span>{" "}
+                <span className="text-primary italic font-medium">
+                  Naturally, Shine
+                </span>{" "}
                 Confidently
               </h1>
               <p className="mt-25">
@@ -131,15 +134,17 @@ const page = () => {
         </div>
       </section>
 
-      <section className="service-section overflow-hidden pt-80 px-3 sm:px-4 md:px-5">
-        <div className="container mx-auto!">
+      {/* SERVICE-SECTION */}
+      <section className="service-section overflow-hidden pt-80 pb-80 px-3 sm:px-4 md:px-5">
+        <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-col lg:flex-row gap-5 justify-between">
               <div className="w-full lg:w-[58%]">
                 <h2 className="font-behind-nineties leading-[100%] text-gray">
                   {" "}
-                  <span className="text-primary">Effective,</span> Gentle, &
-                  Science-Back <span className="text-primary">Skincare</span>
+                  <span className="text-primary italic">Effective,</span>{" "}
+                  Gentle, & Science-Back{" "}
+                  <span className="text-primary italic">Skincare</span>
                 </h2>
                 <Image
                   src={"./images/Sparkle Line.webp"}
@@ -168,14 +173,14 @@ const page = () => {
                   </p>
                 </div>
                 <div className="mt-40">
-                  <a className="btn btn-primary" href="#">
+                  <Link className="btn btn-primary" href="#">
                     View All Services
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-80 gap-5">
-              <a className="service-card group" href="#">
+              <Link className="service-card group" href="#">
                 <div className="img-wrapper border-radius-20 overflow-hidden relative">
                   <Image
                     src={"/images/service-card-1.png"}
@@ -223,7 +228,7 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-3.5">
+                <div className="mt-2 sm:mt-3 lg:mt-3.5">
                   <h4 className="leading-[140%] text-light-gray font-medium line-clamp-1">
                     Lorem ipsum
                   </h4>
@@ -236,8 +241,8 @@ const page = () => {
                     adipiscing elit. Aenean commodo ligula.
                   </p>
                 </div>
-              </a>
-              <a className="service-card group" href="#">
+              </Link>
+              <Link className="service-card group" href="#">
                 <div className="img-wrapper border-radius-20 overflow-hidden relative">
                   <Image
                     src={"/images/service-card-2.png"}
@@ -285,7 +290,7 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-3.5">
+                <div className="mt-2 sm:mt-3 lg:mt-3.5">
                   <h4 className="leading-[140%] text-light-gray font-medium line-clamp-1">
                     Lorem ipsum
                   </h4>
@@ -298,8 +303,8 @@ const page = () => {
                     adipiscing elit. Aenean commodo ligula.
                   </p>
                 </div>
-              </a>
-              <a className="service-card group" href="#">
+              </Link>
+              <Link className="service-card group" href="#">
                 <div className="img-wrapper border-radius-20 overflow-hidden relative">
                   <Image
                     src={"/images/service-card-3.png"}
@@ -347,7 +352,7 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mt-3.5">
+                <div className="mt-2 sm:mt-3 lg:mt-3.5">
                   <h4 className="leading-[140%] text-light-gray font-medium line-clamp-1">
                     Lorem ipsum
                   </h4>
@@ -360,7 +365,87 @@ const page = () => {
                     adipiscing elit. Aenean commodo ligula.
                   </p>
                 </div>
-              </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PRODUCT-SECTION */}
+      <section className="product-section pt-40">
+        <div className="container mx-auto">
+          <div className="flex flex-col justify-center">
+            <div className="w-full lg:w-[50%] text-center mx-auto">
+              <span className="fs-18 underline italic font-normal text-gold leading-[100%]">
+                Our Products
+              </span>
+              <h2 className="font-normal font-behind-nineties text-gray leading-[100%] mt-25">
+                Your Skin <span className="text-primary">Deserves</span> the{" "}
+                <span className="text-primary">Best</span>
+              </h2>
+              <p className="mt-3.5">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem.
+              </p>
+              <div className="mt-40">
+                <Link className="btn btn-primary" href="#">
+                  View All Products
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-50 gap-5">
+              <Link className="product-card group" href="#">
+                <div className="img-wrapper border-radius-20 overflow-hidden relative">
+                  <Image
+                    src={"/images/product-card-1.png"}
+                    width={400}
+                    height={500}
+                    alt="product-card-1"
+                    unoptimized={true}
+                    className="w-full! h-full! object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
+                  <div className="flex flex-col justify-between absolute inset-0 p-2 md:p-3 xl:p-5">
+                    <div className="btn-circle ms-auto group-hover:bg-[#911E3D]!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          className="transition-transform duration-300 group-hover:stroke-white!"
+                          d="M15.775 26.0125C15.35 26.1625 14.65 26.1625 14.225 26.0125C10.6 24.775 2.5 19.6125 2.5 10.8625C2.5 7 5.6125 3.875 9.45 3.875C11.725 3.875 13.7375 4.975 15 6.675C16.2625 4.975 18.2875 3.875 20.55 3.875C24.3875 3.875 27.5 7 27.5 10.8625C27.5 19.6125 19.4 24.775 15.775 26.0125Z"
+                          stroke="#292D32"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="card-footer items-center justify-between gap-2 mt-[5px] flex-1">
+                  <div>
+                    <h4></h4>
+                    <div>
+                      <p></p>
+                      <Image
+                        src={"/images/product-card-arrow.png"}
+                        width={20}
+                        height={20}
+                        alt="product-card-arrow"
+                        unoptimized={true}
+                        className="w-full! h-full! object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
