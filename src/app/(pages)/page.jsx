@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 const page = () => {
   return (
     <>
       <Navbar />
       <section className="hero-section px-40 pt-20">
-        <div className="background-wrapper relative">
+        <div className="background-wrapper border-radius-20 relative">
           <div className="container mx-auto">
             <div className="w-full lg:w-3/5 text-center lg:text-start pb-[20px] lg:pb-[45px]">
               <h1 className="font-behind-nineties font-medium leading-[100%] text-gray">
@@ -22,14 +23,14 @@ const page = () => {
                 mus.
               </p>
               <Image
-                src={"/images/image 162.png"}
+                src={"/images/hero-sectiom-image.png"}
                 width={711}
                 height={720}
-                alt="logo"
+                alt="hero-section-image"
                 unoptimized={true}
-                className="w-full lg:w-auto relative lg:absolute end-0 bottom-0 mx-auto rounded-br-[20px]"
+                className="w-full lg:w-auto relative lg:absolute end-0 bottom-0 mx-auto! rounded-br-[20px]"
               />
-              <div className="book-appointment mt-40">
+              <div className="book-appointment border-radius-20 mt-40">
                 <h4 className="text-dark font-medium text-start mb-4 leading-[100%] text-dark-gray">
                   Book a Free Appointment
                 </h4>
@@ -118,7 +119,7 @@ const page = () => {
                   </div>
 
                   <button
-                    className="w-full btn-primary btn btn-lg mt-[15px] lg:mt-[18px] py-[10px]! px-[24px]! sm:py-[14px]! sm:px-[24px]!"
+                    className="w-full btn btn-lg btn-primary cursor-pointer mt-[15px] lg:mt-[18px] py-[10px]! px-[24px]! sm:py-[14px]! sm:px-[24px]!"
                     type="submit"
                   >
                     Book Appointment
@@ -144,7 +145,7 @@ const page = () => {
                   src={"./images/Sparkle Line.webp"}
                   width={298}
                   height={60}
-                  alt="logo"
+                  alt="Sparkle Line"
                   unoptimized={true}
                   className="w-full h-full object-cover hidden lg:block mt-10"
                 />
@@ -173,7 +174,74 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div></div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-80 gap-5">
+              <a className="service-card group" href="#">
+                <div className="img-wrapper border-radius-20 overflow-hidden relative">
+                  <Image
+                    src={"/images/service-card-1.png"}
+                    width={400}
+                    height={500}
+                    alt="service-card-1"
+                    unoptimized={true}
+                    className="w-full! h-full! object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
+                  <div className="flex flex-col justify-between absolute inset-0 p-2 md:p-3 xl:p-5">
+                    <div className="btn-circle ms-auto ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                      >
+                        <path
+                          d="M7.82715 7.3855L21.3339 7.38555L21.3339 20.8923"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M21.3331 7.3857L6.96582 21.7529"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      {/* <Image
+                        src={"/images/service-card-arrow.svg"}
+                        width={20}
+                        height={20}
+                        alt="service-card-arrow"
+                        unoptimized={true}
+                        className="w-full! h-full! object-cover"
+                      /> */}
+                    </div>
+                    <div className="flex flex-wrap gap-1">
+                      <div className="tag border-radius-20 leading-[125%]">
+                        3 Session
+                      </div>
+                      <div className="tag border-radius-20 leading-[125%]">
+                        1 Session per month
+                      </div>
+                      <div className="tag border-radius-20 leading-[125%]">
+                        Prices Starting form 12000 PKR
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-3.5">
+                  <h4 className="leading-[140%] text-light-gray font-medium">
+                    Lorem ipsum
+                  </h4>
+                  <p className="leading-[125%]">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula.
+                  </p>
+                </div>
+              </a>
+              <div className="">2</div>
+              <div className="">3</div>
+            </div>
           </div>
         </div>
       </section>
