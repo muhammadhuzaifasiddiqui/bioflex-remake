@@ -102,6 +102,11 @@ h4 {
   margin-top: 40px;
 }
 
+.my-35 {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
 .pt-40 {
   padding-top: 40px;
 }
@@ -323,6 +328,32 @@ img {
   backdrop-filter: blur(5px);
 }
 
+/* blog-section */
+.ratio-16x9 {
+  aspect-ratio: 16 / 9;
+}
+
+.custom-bullet {
+  background-color: #8a8a8a;
+  width: 100px !important;
+  height: 8px !important;
+  border-radius: 20px !important;
+  transition: all 300ms ease-in-out;
+  display: inline-block;
+}
+
+/* marquee-section */
+.marquee-section .img-wrapper {
+  width: 210px;
+  height: 90px;
+  border-radius: 10px;
+}
+
+.marquee-section h3 {
+  font-size: 80px;
+  border-radius: 10px;
+}
+
 @media screen and (min-width: 1279.97px) {
   .container {
     max-width: 1280px;
@@ -419,6 +450,11 @@ img {
     margin-top: 32px;
   }
 
+  .my-35 {
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
   .px-40 {
     padding-left: 30px;
     padding-right: 30px;
@@ -482,6 +518,17 @@ img {
   Image {
     height: 440px;
     width: 100%;
+  }
+
+  .marquee-section .img-wrapper {
+    width: 157px;
+    height: 67px;
+    border-radius: 9px;
+  }
+
+  .marquee-section h3 {
+    font-size: 65px;
+    border-radius: 9px;
   }
 }
 
@@ -557,6 +604,11 @@ img {
     margin-top: 26px;
   }
 
+  .my-35 {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+
   .py-80 {
     padding-top: 62px;
     padding-bottom: 62px;
@@ -629,6 +681,17 @@ img {
   Image {
     height: 435px;
     width: 100%;
+  }
+
+  .marquee-section .img-wrapper {
+    width: 150px;
+    height: 64px;
+    border-radius: 8px;
+  }
+
+  .marquee-section h3 {
+    font-size: 45px;
+    border-radius: 8px;
   }
 }
 
@@ -708,6 +771,11 @@ img {
     margin-top: 24px;
   }
 
+  .my-35 {
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+
   .py-80 {
     padding-top: 56px;
     padding-bottom: 56px;
@@ -781,6 +849,17 @@ img {
   Image {
     height: 430px;
     width: 100%;
+  }
+
+  .marquee-section .img-wrapper {
+    width: 145px;
+    height: 60px;
+    border-radius: 7px;
+  }
+
+  .marquee-section h3 {
+    font-size: 40px;
+    border-radius: 7px;
   }
 }
 
@@ -857,6 +936,11 @@ img {
     margin-top: 20px;
   }
 
+  .my-35 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
   .py-80 {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -930,5 +1014,16 @@ img {
   Image {
     height: 430px;
     width: 100%;
+  }
+
+  .marquee-section .img-wrapper {
+    width: 135px;
+    height: 56.5px;
+    border-radius: 5px;
+  }
+
+  .marquee-section h3 {
+    font-size: 35px;
+    border-radius: 5px;
   }
 }

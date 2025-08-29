@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Blog from "../components/Blog";
+import Marquee from "../components/Marquee";
 
 const page = () => {
   return (
@@ -573,8 +574,8 @@ const page = () => {
       {/* TRUSTED-SECTION */}
       <section className="trusted-section py-80 px-3 sm:px-4 md:px-5">
         <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row lg:justify-between gap-[30px]">
-            <div className="flex flex-col w-[50%] justify-between">
+          <div className="flex flex-col lg:flex-row justify-between gap-[30px]">
+            <div className="flex flex-col w-full lg:w-[50%] justify-between">
               <div>
                 <h2 className="font-normal font-behind-nineties leading-[94%]">
                   Trusted
@@ -616,7 +617,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full lg:w-[40%]">
+            <div className="flex justify-center w-full lg:w-[40%]">
               <Image
                 src={"./images/trusted-section-image.webp"}
                 width={500}
@@ -656,6 +657,8 @@ const page = () => {
       {/* BLOG-SWIPER-SECTION */}
       <Blog />    
 
+      {/* BLOG-SWIPER-SECTION */}
+      <Marquee />
     </>
   );
 };
