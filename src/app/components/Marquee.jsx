@@ -44,7 +44,31 @@ const Marquee = () => {
       title: "ppr-threapy",
       img: "/images/ppr-threapy.webp",
       alt: "ppr-threapy",
-    }
+    },
+    {
+      id: 7,
+      title: "ppr-threapy",
+      img: "/images/ppr-threapy.webp",
+      alt: "ppr-threapy",
+    },
+    {
+      id: 8,
+      title: "Treatment",
+      img: "/images/Aesthetic.webp",
+      alt: "Treatment",
+    },
+    {
+      id: 9,
+      title: "Asthetic",
+      img: "/images/Aesthetic.webp",
+      alt: "Aesthetic",
+    },
+    {
+      id: 10,
+      title: "ppr-threapy",
+      img: "/images/ppr-threapy.webp",
+      alt: "ppr-threapy",
+    }    
   ];
 
   return (
@@ -80,7 +104,7 @@ const Marquee = () => {
                       height={100}
                       alt={item.alt}
                       unoptimized={true}
-                      className="w-full! h-full! object-cover"
+                      className="w-full! h-full! object-cover rounded-[10px]"
                     />
                   </div>
                 </div>
@@ -113,7 +137,7 @@ const Marquee = () => {
                       height={200}
                       alt={item.alt}
                       unoptimized={true}
-                      className="w-full! h-full! object-cover"
+                      className="w-full! h-full! object-cover rounded-[10px]"
                     />
                   </div>
                   <div className="inline-block">
