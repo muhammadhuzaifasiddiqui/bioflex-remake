@@ -8,7 +8,7 @@ import Marquee from "../components/Marquee";
 const page = () => {
   return (
     <>
-      {/* NAVBAR */}    
+      {/* NAVBAR */}
       <Navbar />
       {/* HERO-SECTION */}
       <section className="hero-section px-40 pt-20">
@@ -655,10 +655,442 @@ const page = () => {
       </section>
 
       {/* BLOG-SWIPER-SECTION */}
-      <Blog />    
+      <Blog />
 
       {/* BLOG-SWIPER-SECTION */}
       <Marquee />
+
+      {/* BOOK-NOW-SECTION */}
+      <section className="book-now-section px-3 md:px-4 lg:px-5 pt-12 lg:pt-14 md:pt-16 sm:pt-20" id="book">
+        <div className="background-wrapper w-fit mx-auto">
+          <div className="container mx-auto relative pb-7 sm:pb-12.5 lg:pb-[30px]">
+            <Image
+              src={"/images/book-now.webp"}
+              width={1360}
+              height={550}
+              alt="logo"
+              unoptimized={true}
+              className="hidden lg:block lg:w-auto absolute end-0 bottom-0 rounded-br-[20px]"
+            />
+            <div className="relative z-[1]">
+              <div className="flex flex-col lg:flex-row justify-between gap-y-4">
+                <div className="w-full lg:w-[60%]">
+                  <h2 className="font-behind-nineties text-secondary-light text-center lg:text-start leading-[110%]">
+                    Your <span className="text-primary italic">Glow-Up </span>
+                    Begins Without the{" "}
+                    <span className="text-primary italic">Price Tag</span>
+                  </h2>
+                </div>
+                <div className="w-full lg:w-[38%]">
+                  <p className="fs-16 text-center lg:text-end text-grey-dark leading-[140%]">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem.
+                  </p>
+                  <div className="hidden lg:flex justify-end gap-4 pt-5">
+                    <a
+                      target="_blank"
+                      className="social-icon"
+                      href="https://www.facebook.com/bioflexaesthetics/"
+                    >
+                      <Image
+                        src={
+                          "https://api.bioflexaesthetics.com/wp-content/uploads/2025/05/facebook-icon.svg"
+                        }
+                        width={1360}
+                        height={550}
+                        alt="logo"
+                        unoptimized={true}
+                        className="w-full h-full object-cover"
+                      />
+                    </a>
+                    <a
+                      target="_blank"
+                      className="social-icon"
+                      href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
+                    >
+                      <Image
+                        src={
+                          "https://api.bioflexaesthetics.com/wp-content/uploads/2025/06/tiktok-icon-new.svg"
+                        }
+                        width={1360}
+                        height={550}
+                        alt="logo"
+                        unoptimized={true}
+                        className="w-full h-full object-cover"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center pt-4 lg:pt-[275px]">
+                <a
+                  className="btn btn-primary inline-block"
+                  href="/#appointment-section"
+                >
+                  Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT-SECTION */}
+      <section
+        className="contact-section px-3 md:px-4 lg:px-5 py-80"
+        id="contact"
+      >
+        <div className="container mx-auto">
+          <div className="grid grid-cols-2 xl:grid-cols-4">
+            <div className="item">
+              <h5 className="text-secondary">Call Center</h5>
+              <div className="flex flex-col pt-2.5">
+                <a
+                  className="fs-18 text-dark hover-underline"
+                  aria-label="Call +92323 2463539"
+                  href="tel:+923232463539"
+                >
+                  +92323-2463539
+                </a>
+              </div>
+            </div>
+            <div className="item">
+              <h5 className="text-secondary">E-mail Address</h5>
+              <div className="pt-2.5">
+                <a
+                  className="fs-18 text-dark hover-underline break-all"
+                  aria-label="Send an email to info at bioflex aesthetics dot com"
+                  href="mailto:info@bioflexaesthetics.com"
+                >
+                  info@bioflexaesthetics.com
+                </a>
+              </div>
+            </div>
+            <div className="item">
+              <h5 className="text-secondary">Our locations</h5>
+              <div className="flex flex-col pt-2.5">
+                <a
+                  target="_blank"
+                  className="fs-18 text-dark hover-underline"
+                  href="https://maps.app.goo.gl/kCmHMQgeVeMSQ5AP7"
+                >
+                  Karachi
+                </a>
+                <a
+                  target="_blank"
+                  className="fs-18 text-dark hover-underline"
+                  href="https://maps.app.goo.gl/PzxQnFfvdmtqod3s7"
+                >
+                  Islamabad
+                </a>
+                <a
+                  target="_blank"
+                  className="fs-18 text-dark hover-underline"
+                  href="https://maps.app.goo.gl/xVY6GBbWMT1rWPQZ9"
+                >
+                  Peshawar
+                </a>
+                <a
+                  target="_blank"
+                  className="fs-18 text-dark hover-underline"
+                  href="https://maps.app.goo.gl/8GoQkky9NyeYjnJt5"
+                >
+                  Rawalpindi
+                </a>
+              </div>
+            </div>
+            <div className="item">
+              <div
+                id="_rht_toaster"
+                className="fixed z-[9999] top-[16px] left-[16px] right-[16px] bottom-[16px] pointer-events-none"
+              ></div>
+              <h5 className="text-secondary">Newsletter</h5>
+              <div className="pt-2.5">
+                <form>
+                  <div className="flex flex-col gap-2.5">
+                    <input
+                      type="email"
+                      className="w-full form-control fs-16 focus:border-transparent focus:outline-none"
+                      placeholder="Your E-mail Address"
+                      name="email"
+                    />
+                    <button
+                      type="submit"
+                      className="w-full flex items-center justify-center gap-3 btn btn-primary fs-18"
+                    >
+                      Subscribe
+                      <Image
+                        src={"/images/White Arrow Right.png"}
+                        width={17}
+                        height={16}
+                        alt="logo"
+                        unoptimized={true}
+                        className="w-full h-full object-cover"
+                      />
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER-SECTION */}
+      <section className="footer-section px-3 md:px-4 lg:px-5" id="footer">
+        <div className="container mx-auto!">
+          <div className="flex flex-wrap gap-y-6">
+            <div className="w-full lg:w-[36%] me-auto order-first">
+              <div className="footer-logo-wraper">
+                <a href="/">
+                  <Image
+                    src={
+                      "https://api.bioflexaesthetics.com/wp-content/uploads/2025/05/logo.svg"
+                    }
+                    width={120}
+                    height={50}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              </div>
+
+              <p className="text-secondary-dark pt-4 fs-14">
+                Trusted aesthetic care powered by Canadian, FDA-approved
+                technology — available across Pakistan.
+              </p>
+            </div>
+            <div className="lg:hidden w-full lg:w-[18%]">
+              <h5 className="text-secondary-dark font-normal">Contact Us</h5>
+              <div className="flex justify-start gap-5 pt-4">
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  href="https://www.facebook.com/bioflexaesthetics/"
+                >
+                  <Image
+                    src={"/images/flat-color-icons_google.png"}
+                    width={27}
+                    height={27}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
+                >
+                  <Image
+                    src={"/images/akar-icons_facebook-fill.png"}
+                    width={27}
+                    height={27}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
+                >
+                  <Image
+                    src={"/images/logos_twitter.png"}
+                    width={27}
+                    height={27}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
+                >
+                  <Image
+                    src={"/images/logos_linkedin-icon.png"}
+                    width={27}
+                    height={27}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="w-[50%] lg:w-[20%] pe-8">
+              <h5 className="text-secondary-dark font-normal">Information</h5>
+              <ul className="pt-4 fs-14">
+                <li>
+                  <Image
+                    src={"/images/Vector 6.svg"}
+                    width={6}
+                    height={8}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <Image
+                    src={"/images/Vector 6.svg"}
+                    width={6}
+                    height={8}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                  <a href="/about">About</a>
+                </li>
+                <li>
+                  <Image
+                    src={"/images/Vector 6.svg"}
+                    width={6}
+                    height={8}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                  <a href="/services">Services</a>
+                </li>
+                <li>
+                  <Image
+                    src={"/images/Vector 6.svg"}
+                    width={6}
+                    height={8}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                  <a href="/products">Products</a>
+                </li>
+                <li>
+                  <Image
+                    src={"/images/Vector 6.svg"}
+                    width={6}
+                    height={8}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                  <a href="/articles">Articles</a>
+                </li>
+              </ul>
+            </div>
+            <div className="w-[50%] lg:w-[20%]">
+              <h5 className="text-secondary-dark font-normal">Useful Links</h5>
+              <ul className="pt-4 fs-14">
+                <li>
+                  <Image
+                    src={"/images/Vector 6.svg"}
+                    width={6}
+                    height={8}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                  <a href="/terms&amp;condition">Terms &amp; Condition</a>
+                </li>
+                <li>
+                  <Image
+                    src={"/images/Vector 6.svg"}
+                    width={6}
+                    height={8}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                  <a href="/privacy">Privacy &amp; Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div className="hidden lg:block w-full lg:w-[18%]">
+              <h5 className="text-secondary-dark font-normal">Contact Us</h5>
+              <div className="flex justify-start gap-5 pt-4">
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  href="https://www.facebook.com/bioflexaesthetics/"
+                >
+                  <Image
+                    src={"/images/flat-color-icons_google.png"}
+                    width={27}
+                    height={27}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
+                >
+                  <Image
+                    src={"/images/akar-icons_facebook-fill.png"}
+                    width={27}
+                    height={27}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
+                >
+                  <Image
+                    src={"/images/logos_twitter.png"}
+                    width={27}
+                    height={27}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  className="social-icon"
+                  href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
+                >
+                  <Image
+                    src={"/images/logos_linkedin-icon.png"}
+                    width={27}
+                    height={27}
+                    alt="logo"
+                    unoptimized={true}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="bottom-row flex flex-wrap gap-x-2 gap-y-1 items-center justify-center">
+            <p className=" fs-14 text-secondary-dark text-center">
+              © 2025 Bioflexaesthetics. All Rights Reserved.
+            </p>
+            <p className=" fs-14 text-secondary-dark text-center">
+              Designed by
+              <a
+                className="text-blue-800 hover:text-blue-900 transition fs-14"
+                target="_blank"
+                href="https://nanolixdigital.com"
+              >
+                Nanolix Digital
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

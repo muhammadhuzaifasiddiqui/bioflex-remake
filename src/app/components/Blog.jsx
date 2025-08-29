@@ -146,7 +146,7 @@ const Blog = () => {
             </SwiperSlide>                        
           </Swiper>
 
-          <div className="custom-pagination flex justify-center gap-3 mt-0 sm:mt-1"></div>
+          <div className="custom-pagination flex justify-center gap-3 mt-1 sm:mt-2"></div>
 
           <style jsx global>{`
             .custom-bullet {
