@@ -114,12 +114,17 @@ h4 {
   padding-top: 20px;
 }
 
-.pt-80 {
-  padding-top: 80px;
+.p-20 {
+  padding: 20px;
 }
 
-.pb-80 {
+.py-80 {
+  padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.pt-80 {
+  padding-top: 80px;
 }
 
 .px-40 {
@@ -304,6 +309,20 @@ img {
   background: #F4EDE4;
 }
 
+.product-card .card-footer {
+  padding: 20px 26px 20px 16px;
+  border: 1px solid #EAEAEA;
+  background-color: #FBFBFB;
+}
+
+/* trusted-section */
+.trust-card {
+  border: 1px solid #E8E8E8;
+  background: rgba(255, 255, 255, 0.20);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+}
+
 @media screen and (min-width: 1279.97px) {
   .container {
     max-width: 1280px;
@@ -375,6 +394,10 @@ img {
     padding-top: 18px;
   }
 
+  .p-20 {
+    padding: 18px;
+  }
+
   .pt-40 {
     padding-top: 36px;
   }
@@ -383,12 +406,13 @@ img {
     padding-top: 45px;
   }
 
-  .pt-80 {
+  .py-80 {
     padding-top: 70px;
+    padding-bottom: 70px;
   }
 
-  .pb-80 {
-    padding-bottom: 70px;
+  .pt-80 {
+    padding-top: 70px;
   }
 
   .mt-40 {
@@ -517,6 +541,10 @@ img {
     padding-top: 16px;
   }
 
+  .p-20 {
+    padding: 16px;
+  }
+
   .pt-40 {
     padding-top: 33px;
   }
@@ -529,12 +557,13 @@ img {
     margin-top: 26px;
   }
 
-  .pt-80 {
+  .py-80 {
     padding-top: 62px;
+    padding-bottom: 62px;
   }
 
-  .pb-80 {
-    padding-bottom: 62px;
+  .pt-80 {
+    padding-top: 62px;
   }
 
   .px-40 {
@@ -659,6 +688,10 @@ img {
     padding-top: 14px;
   }
 
+  .p-20 {
+    padding: 14px;
+  }
+
   .pt-40 {
     padding-top: 30px;
   }
@@ -675,11 +708,13 @@ img {
     margin-top: 24px;
   }
 
-  .pt-80 {
+  .py-80 {
     padding-top: 56px;
+    padding-bottom: 56px;
   }
 
-  .pb-80 {
+  .py-80 {
+    padding-top: 56px;
     padding-bottom: 56px;
   }
 
@@ -806,6 +841,10 @@ img {
     padding-top: 12px;
   }
 
+  .p-20 {
+    padding: 12px;
+  }
+
   .pt-40 {
     padding-top: 27px;
   }
@@ -818,11 +857,13 @@ img {
     margin-top: 20px;
   }
 
-  .pt-80 {
+  .py-80 {
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 
-  .pb-80 {
+  .py-80 {
+    padding-top: 50px;
     padding-bottom: 50px;
   }
 

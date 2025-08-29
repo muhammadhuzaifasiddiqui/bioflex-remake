@@ -2,10 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Link from "next/link";
+import Blog from "../components/Blog";
 
 const page = () => {
   return (
     <>
+      {/* NAVBAR */}    
       <Navbar />
       {/* HERO-SECTION */}
       <section className="hero-section px-40 pt-20">
@@ -135,12 +137,12 @@ const page = () => {
       </section>
 
       {/* SERVICE-SECTION */}
-      <section className="service-section overflow-hidden pt-80 pb-80 px-3 sm:px-4 md:px-5">
+      <section className="service-section overflow-hidden py-80 px-3 sm:px-4 md:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col">
             <div className="flex flex-col lg:flex-row gap-5 justify-between">
-              <div className="w-full lg:w-[58%]">
-                <h2 className="font-behind-nineties leading-[100%] text-gray">
+              <div className="w-full lg:w-[50%]">
+                <h2 className="font-behind-nineties leading-[100%] font-normal text-gray">
                   {" "}
                   <span className="text-primary italic">Effective,</span>{" "}
                   Gentle, & Science-Back{" "}
@@ -155,9 +157,9 @@ const page = () => {
                   className="w-full h-full object-cover hidden lg:block mt-10"
                 />
               </div>
-              <div className="w-full lg:w-[58%] flex flex-col gap-3">
+              <div className="w-full lg:w-[42%] flex flex-col gap-3">
                 <div>
-                  <p>
+                  <p className="text-justify">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                     natoque penatibus et magnis dis parturient montes, nascetur
@@ -165,7 +167,7 @@ const page = () => {
                   </p>
                 </div>
                 <div>
-                  <p>
+                  <p className="text-justify">
                     Donec quam felis, ultricies nec, pellentesque eu, pretium
                     quis, sem. Nulla consequat massa quis enim. Donec pede
                     justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
@@ -372,14 +374,14 @@ const page = () => {
       </section>
 
       {/* PRODUCT-SECTION */}
-      <section className="product-section pt-40">
+      <section className="product-section py-40 px-3 sm:px-4 md:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col justify-center">
             <div className="w-full lg:w-[50%] text-center mx-auto">
               <span className="fs-18 underline italic font-normal text-gold leading-[100%]">
                 Our Products
               </span>
-              <h2 className="font-normal font-behind-nineties text-gray leading-[100%] mt-25">
+              <h2 className="font-normal font-behind-nineties text-gray leading-[94%] mt-25">
                 Your Skin <span className="text-primary">Deserves</span> the{" "}
                 <span className="text-primary">Best</span>
               </h2>
@@ -429,27 +431,231 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="card-footer items-center justify-between gap-2 mt-[5px] flex-1">
+                <div className="flex card-footer border-radius-20 items-center justify-between gap-2 mt-1 flex-1">
                   <div>
-                    <h4></h4>
-                    <div>
-                      <p></p>
+                    <h4 className="font-medium text-light-gray leading-[140%]">
+                      Lorem ipsum
+                    </h4>
+                    <div className="flex items-center gap-1 mt-2">
+                      <p className="fs-18 font-normal leading-[100%]">
+                        Details
+                      </p>
                       <Image
                         src={"/images/product-card-arrow.png"}
                         width={20}
                         height={20}
                         alt="product-card-arrow"
                         unoptimized={true}
-                        className="w-full! h-full! object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                        className="transition-transform duration-300 ease-in-out group-hover:scale-105"
                       />
                     </div>
                   </div>
+                  <p className="font-behind-nineties fs-35 font-normal text-dark-gray">
+                    12.05$
+                  </p>
+                </div>
+              </Link>
+              <Link className="product-card group" href="#">
+                <div className="img-wrapper border-radius-20 overflow-hidden relative">
+                  <Image
+                    src={"/images/product-card-2.png"}
+                    width={400}
+                    height={500}
+                    alt="product-card-2"
+                    unoptimized={true}
+                    className="w-full! h-full! object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
+                  <div className="flex flex-col justify-between absolute inset-0 p-2 md:p-3 xl:p-5">
+                    <div className="btn-circle ms-auto group-hover:bg-[#911E3D]!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          className="transition-transform duration-300 group-hover:stroke-white!"
+                          d="M15.775 26.0125C15.35 26.1625 14.65 26.1625 14.225 26.0125C10.6 24.775 2.5 19.6125 2.5 10.8625C2.5 7 5.6125 3.875 9.45 3.875C11.725 3.875 13.7375 4.975 15 6.675C16.2625 4.975 18.2875 3.875 20.55 3.875C24.3875 3.875 27.5 7 27.5 10.8625C27.5 19.6125 19.4 24.775 15.775 26.0125Z"
+                          stroke="#292D32"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex card-footer border-radius-20 items-center justify-between gap-2 mt-1 flex-1">
+                  <div>
+                    <h4 className="font-medium text-light-gray leading-[140%]">
+                      Lorem ipsum
+                    </h4>
+                    <div className="flex items-center gap-1 mt-2">
+                      <p className="fs-18 font-normal leading-[100%]">
+                        Details
+                      </p>
+                      <Image
+                        src={"/images/product-card-arrow.png"}
+                        width={20}
+                        height={20}
+                        alt="product-card-arrow"
+                        unoptimized={true}
+                        className="transition-transform duration-300 ease-in-out group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                  <p className="font-behind-nineties fs-35 font-normal text-dark-gray">
+                    12.05$
+                  </p>
+                </div>
+              </Link>
+              <Link className="product-card group" href="#">
+                <div className="img-wrapper border-radius-20 overflow-hidden relative">
+                  <Image
+                    src={"/images/product-card-3.png"}
+                    width={400}
+                    height={500}
+                    alt="product-card-3"
+                    unoptimized={true}
+                    className="w-full! h-full! object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
+                  <div className="flex flex-col justify-between absolute inset-0 p-2 md:p-3 xl:p-5">
+                    <div className="btn-circle ms-auto group-hover:bg-[#911E3D]!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        fill="none"
+                      >
+                        <path
+                          className="transition-transform duration-300 group-hover:stroke-white!"
+                          d="M15.775 26.0125C15.35 26.1625 14.65 26.1625 14.225 26.0125C10.6 24.775 2.5 19.6125 2.5 10.8625C2.5 7 5.6125 3.875 9.45 3.875C11.725 3.875 13.7375 4.975 15 6.675C16.2625 4.975 18.2875 3.875 20.55 3.875C24.3875 3.875 27.5 7 27.5 10.8625C27.5 19.6125 19.4 24.775 15.775 26.0125Z"
+                          stroke="#292D32"
+                          strokeWidth="1.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex card-footer border-radius-20 items-center justify-between gap-2 mt-1 flex-1">
+                  <div>
+                    <h4 className="font-medium text-light-gray leading-[140%]">
+                      Lorem ipsum
+                    </h4>
+                    <div className="flex items-center gap-1 mt-2">
+                      <p className="fs-18 font-normal leading-[100%]">
+                        Details
+                      </p>
+                      <Image
+                        src={"/images/product-card-arrow.png"}
+                        width={20}
+                        height={20}
+                        alt="product-card-arrow"
+                        unoptimized={true}
+                        className="transition-transform duration-300 ease-in-out group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                  <p className="font-behind-nineties fs-35 font-normal text-dark-gray">
+                    12.05$
+                  </p>
                 </div>
               </Link>
             </div>
           </div>
         </div>
       </section>
+
+      {/* TRUSTED-SECTION */}
+      <section className="trusted-section py-80 px-3 sm:px-4 md:px-5">
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row lg:justify-between gap-[30px]">
+            <div className="flex flex-col w-[50%] justify-between">
+              <div>
+                <h2 className="font-normal font-behind-nineties leading-[94%]">
+                  Trusted
+                  <span className="italic text-primary"> Aesthetic Advice</span>
+                  , Tailored for
+                  <span className="italic text-primary">You</span>
+                </h2>
+                <div className="flex flex-col gap-5 mt-25 w-full lg:w-[80%]">
+                  <div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus.
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      Donec quam felis, ultricies nec, pellentesque eu, pretium
+                      quis, sem. Nulla consequat massa quis enim. Donec pede
+                      justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                      In enim justo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="grid grid-cols-3 mt-7.5 gap-1.5 md:gap-2 lg:gap-2.5">
+                <div className="trust-card border-radius-20 p-20">
+                  <p className="fs-38 text-dark-gray">15K+</p>
+                  <p className="font-[275] text-dark-gray">Customers</p>
+                </div>
+                <div className="trust-card border-radius-20 p-20">
+                  <p className="fs-38 text-dark-gray">FDA</p>
+                  <p className="font-[275] text-dark-gray">Approved</p>
+                </div>
+                <div className="trust-card border-radius-20 p-20">
+                  <p className="fs-38 text-dark-gray">99%</p>
+                  <p className="font-[275] text-dark-gray">Satisfaction</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full lg:w-[40%]">
+              <Image
+                src={"./images/trusted-section-image.webp"}
+                width={500}
+                height={550}
+                alt="trusted-section-image"
+                unoptimized={true}
+                className="w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG-SECTION */}
+      <section className="blog-section overflow-hidden px-3 sm:px-4 md:px-5">
+        <div className="container mx-auto">
+          <div className="flex flex-col">
+            <div className="flex flex-col lg:flex-row gap-5 justify-between">
+              <div className="w-full lg:w-[40%]">
+                <h2 className="font-behind-nineties leading-[94%] text-gray font-normal">
+                  Our <span className="text-primary italic">Blog</span>
+                </h2>
+              </div>
+              <div className="w-full lg:w-[45%] flex flex-col end-0 gap-3">
+                <p className="text-justify">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG-SWIPER-SECTION */}
+      <Blog />    
+
     </>
   );
 };
