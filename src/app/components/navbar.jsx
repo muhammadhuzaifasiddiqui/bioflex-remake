@@ -1,8 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 
 const Navbar = () => {
