@@ -151,7 +151,6 @@ const Blog = () => {
           <style jsx global>{`
             .custom-bullet {
             }
-
             .swiper-pagination-bullet-active.custom-bullet {
               background-color: #a21a41; /* Burgundy / Primary Color */
             }

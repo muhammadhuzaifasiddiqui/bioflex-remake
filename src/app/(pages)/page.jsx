@@ -870,7 +870,7 @@ const page = () => {
             </div>
             <div className="lg:hidden w-full lg:w-[18%]">
               <h4 className="text-gray font-normal">Contact Us</h4>
-              <div className="flex justify-start gap-5 pt-4">
+              <div className="flex justify-start gap-4 pt-4">
                 <Link
                   target="_blank"
                   className="social-icon"
