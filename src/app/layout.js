@@ -1,7 +1,6 @@
 import { Inter, Montserrat, Poppins } from "next/font/google";
 import "./styles/globals.css";
 import localFont from "next/font/local";
-import Navbar from "./components/Navbar";
 
 const behindthenineties = localFont({
   src: [
@@ -77,7 +76,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${poppins.variable} ${montserrat.variable} ${behindthenineties.variable}`}>
-        <Navbar />
         {children}
       </body>
     </html>

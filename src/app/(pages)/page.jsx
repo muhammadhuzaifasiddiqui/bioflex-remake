@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import Navbar from "../components/Navbar";
 import Link from "next/link";
 import Blog from "../components/Blog";
 import Marquee from "../components/Marquee";
@@ -8,7 +8,10 @@ import Marquee from "../components/Marquee";
 const page = () => {
   return (
     <>
-      {/* HERO-SECTION - */}
+      {/* NAVBAR */}
+      <Navbar />
+      
+      {/* HERO-SECTION */}
       <section className="hero-section px-40 pt-20">
         <div className="background-wrapper border-radius-20 relative">
           <div className="container mx-auto">
