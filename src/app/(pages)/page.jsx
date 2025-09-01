@@ -749,58 +749,58 @@ const page = () => {
             <div className="item">
               <h4>Call Center</h4>
               <div className="flex flex-col pt-2.5">
-                <a
+                <Link
                   className="fs-20 text-dark-gray hover-underline"
                   aria-label="Call +92323 2463539"
                   href="tel:+923232463539"
                 >
                   +123-456-7890
-                </a>
+                </Link>
               </div>
             </div>
             <div className="item">
               <h4>E-mail Address</h4>
               <div className="pt-2.5">
-                <a
+                <Link
                   className="fs-20 text-dark-gray hover-underline break-all"
                   aria-label="Send an email to info at bioflex aesthetics dot com"
                   href="mailto:info@bioflexaesthetics.com"
                 >
                   your_mail@mail.com
-                </a>
+                </Link>
               </div>
             </div>
             <div className="item">
               <h4>Our locations</h4>
               <div className="flex flex-col pt-2.5">
-                <a
+                <Link
                   target="_blank"
                   className="fs-20 text-dark-gray hover-underline"
                   href="https://maps.app.goo.gl/kCmHMQgeVeMSQ5AP7"
                 >
                   Karachi
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   className="fs-20 text-dark-gray hover-underline"
                   href="https://maps.app.goo.gl/PzxQnFfvdmtqod3s7"
                 >
                   Islamabad
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   className="fs-20 text-dark-gray hover-underline"
                   href="https://maps.app.goo.gl/xVY6GBbWMT1rWPQZ9"
                 >
                   Peshawar
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   className="fs-20 text-dark-gray hover-underline"
                   href="https://maps.app.goo.gl/8GoQkky9NyeYjnJt5"
                 >
                   Rawalpindi
-                </a>
+                </Link>
               </div>
             </div>
             <div className="item">

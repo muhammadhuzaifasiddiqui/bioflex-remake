@@ -379,7 +379,7 @@ Image {
 }
 
 /* contact-section */
-.contact-section{
+.contact-section {
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
 }
@@ -389,13 +389,13 @@ Image {
   border-color: transparent;
 }
 
+.contact-section .item:last-child {
+  padding-right: 0;
+}
+
 .contact-section .item {
   padding: 24px 30px;
   border-left: 1px solid #dfdfdf;
-}
-
-.contact-section .item:last-child {
-  padding-right: 0;
 }
 
 .contact-section .form-control {
@@ -443,8 +443,8 @@ Image {
 
 @media screen and (max-width: 1279.97px) {
 
-  .service-card .img-wrapper,
-  Image {
+  .product-card .img-wrapper,
+  .service-card .img-wrapper {
     height: 450px;
     width: 100%;
   }
@@ -452,6 +452,11 @@ Image {
   .px-40 {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .contact-section .item:nth-child(3) {
+    padding-left: 0;
+    border-color: transparent;
   }
 }
 
@@ -600,8 +605,8 @@ Image {
     border-radius: 18px;
   }
 
-  .service-card .img-wrapper,
-  Image {
+  .product-card .img-wrapper,
+  .service-card .img-wrapper {
     height: 440px;
     width: 100%;
   }
@@ -620,6 +625,11 @@ Image {
 
   .book-now-section .background-wrapper {
     padding: 58px 45px 0;
+  }
+
+  .contact-section .item:nth-child(3) {
+    padding-left: 0;
+    border-color: transparent;
   }
 }
 
@@ -768,8 +778,8 @@ Image {
     border-radius: 16px;
   }
 
-  .service-card .img-wrapper,
-  Image {
+  .product-card .img-wrapper,
+  .service-card .img-wrapper {
     height: 435px;
     width: 100%;
   }
@@ -788,6 +798,11 @@ Image {
 
   .book-now-section .background-wrapper {
     padding: 55px 30px 0;
+  }
+
+  .contact-section .item:nth-child(3) {
+    padding-left: 0;
+    border-color: transparent;
   }
 }
 
@@ -941,8 +956,8 @@ Image {
     border-radius: 15px;
   }
 
-  .service-card .img-wrapper,
-  Image {
+  .product-card .img-wrapper,
+  .service-card .img-wrapper {
     height: 430px;
     width: 100%;
   }
@@ -961,6 +976,11 @@ Image {
 
   .book-now-section .background-wrapper {
     padding: 52px 20px 0;
+  }
+
+  .contact-section .item:nth-child(3) {
+    padding-left: 0;
+    border-color: transparent;
   }
 }
 
@@ -1111,9 +1131,9 @@ Image {
     border-radius: 14px;
   }
 
-  .service-card .img-wrapper,
-  Image {
-    height: 430px;
+  .product-card .img-wrapper,
+  .service-card .img-wrapper {
+    height: 400px;
     width: 100%;
   }
 
@@ -1131,5 +1151,10 @@ Image {
 
   .book-now-section .background-wrapper {
     padding: 50px 15px 0;
+  }
+
+  .contact-section .item:nth-child(3) {
+    padding-left: 0;
+    border-color: transparent;
   }
 }
