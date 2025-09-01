@@ -4,7 +4,6 @@ import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scroll, setScrolled] = useState(false);
@@ -112,15 +111,7 @@ const Navbar = () => {
                   unoptimized={true}
                   className="w-full! h-full! object-cover"
                 />
-                {}
-                <path
-                  d="M6.58496 9.5H31.9183M6.58496 19H31.9183M6.58496 28.5H31.9183"
-                  stroke="#A1A1AA"
-                  strokeWidth="3.16667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                {/* </svg> */}
+
               </button>
             </div>
           </div>
