@@ -379,7 +379,7 @@ Image {
 }
 
 /* contact-section */
-.contact-section .container .grid {
+.contact-section{
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
 }
@@ -400,21 +400,6 @@ Image {
 
 .contact-section .form-control {
   background-color: #ededed;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font: inherit;
-  font-feature-settings: inherit;
-  font-variation-settings: inherit;
-  letter-spacing: inherit;
-  color: inherit;
-  opacity: 1;
-  background-color: #0000;
-  border-radius: 0;
 }
 
 /* footer-section */
@@ -440,16 +425,15 @@ textarea {
   color: #3a3a3a;
 }
 
-.footer-section .bottom-row {
-  padding-top: 30px;
-}
-
 .footer-section .social-icon {
   width: 27px;
   height: 27px;
   flex-shrink: 0;
 }
 
+.footer-section .bottom-row {
+  padding-top: 30px;
+}
 
 @media screen and (min-width: 1279.97px) {
   .container {
@@ -633,6 +617,10 @@ textarea {
     font-size: 60px;
     border-radius: 10px;
   }
+
+  .book-now-section .background-wrapper {
+    padding: 58px 45px 0;
+  }
 }
 
 @media screen and (max-width: 767.97px) {
@@ -796,6 +784,10 @@ textarea {
   .marquee-section h3 {
     font-size: 50px;
     border-radius: 10px;
+  }
+
+  .book-now-section .background-wrapper {
+    padding: 55px 30px 0;
   }
 }
 
@@ -966,6 +958,10 @@ textarea {
     font-size: 45px;
     border-radius: 10px;
   }
+
+  .book-now-section .background-wrapper {
+    padding: 52px 20px 0;
+  }
 }
 
 @media screen and (max-width: 399.97) {
@@ -1131,5 +1127,9 @@ textarea {
   .marquee-section h3 {
     font-size: 35px;
     border-radius: 10px;
+  }
+
+  .book-now-section .background-wrapper {
+    padding: 50px 15px 0;
   }
 }

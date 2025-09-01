@@ -661,7 +661,10 @@ const page = () => {
       <Marquee />
 
       {/* BOOK-NOW-SECTION */}
-      <section className="book-now-section px-3 md:px-4 lg:px-5 pt-12 lg:pt-14 md:pt-16 sm:pt-20" id="book">
+      <section
+        className="book-now-section px-3 md:px-4 lg:px-5 py-80"
+        id="book"
+      >
         <div className="background-wrapper w-fit mx-auto">
           <div className="container mx-auto relative pb-7 sm:pb-12.5 lg:pb-[30px]">
             <Image
@@ -739,63 +742,60 @@ const page = () => {
       </section>
 
       {/* CONTACT-SECTION */}
-      {/* <section
-        className="contact-section px-3 md:px-4 lg:px-5 py-80"
-        id="contact"
-      >
+      <section className="contact-section px-3 md:px-4 lg:px-5" id="contact">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 xl:grid-cols-4">
             <div className="item">
-              <h5 className="text-secondary">Call Center</h5>
+              <h4>Call Center</h4>
               <div className="flex flex-col pt-2.5">
                 <a
-                  className="fs-18 text-dark hover-underline"
+                  className="fs-20 text-dark-gray hover-underline"
                   aria-label="Call +92323 2463539"
                   href="tel:+923232463539"
                 >
-                  +92323-2463539
+                  +123-456-7890
                 </a>
               </div>
             </div>
             <div className="item">
-              <h5 className="text-secondary">E-mail Address</h5>
+              <h4>E-mail Address</h4>
               <div className="pt-2.5">
                 <a
-                  className="fs-18 text-dark hover-underline break-all"
+                  className="fs-20 text-dark-gray hover-underline break-all"
                   aria-label="Send an email to info at bioflex aesthetics dot com"
                   href="mailto:info@bioflexaesthetics.com"
                 >
-                  info@bioflexaesthetics.com
+                  your_mail@mail.com
                 </a>
               </div>
             </div>
             <div className="item">
-              <h5 className="text-secondary">Our locations</h5>
+              <h4>Our locations</h4>
               <div className="flex flex-col pt-2.5">
                 <a
                   target="_blank"
-                  className="fs-18 text-dark hover-underline"
+                  className="fs-20 text-dark-gray hover-underline"
                   href="https://maps.app.goo.gl/kCmHMQgeVeMSQ5AP7"
                 >
                   Karachi
                 </a>
                 <a
                   target="_blank"
-                  className="fs-18 text-dark hover-underline"
+                  className="fs-20 text-dark-gray hover-underline"
                   href="https://maps.app.goo.gl/PzxQnFfvdmtqod3s7"
                 >
                   Islamabad
                 </a>
                 <a
                   target="_blank"
-                  className="fs-18 text-dark hover-underline"
+                  className="fs-20 text-dark-gray hover-underline"
                   href="https://maps.app.goo.gl/xVY6GBbWMT1rWPQZ9"
                 >
                   Peshawar
                 </a>
                 <a
                   target="_blank"
-                  className="fs-18 text-dark hover-underline"
+                  className="fs-20 text-dark-gray hover-underline"
                   href="https://maps.app.goo.gl/8GoQkky9NyeYjnJt5"
                 >
                   Rawalpindi
@@ -807,7 +807,7 @@ const page = () => {
                 id="_rht_toaster"
                 className="fixed z-[9999] top-[16px] left-[16px] right-[16px] bottom-[16px] pointer-events-none"
               ></div>
-              <h5 className="text-secondary">Newsletter</h5>
+              <h4>Newsletter</h4>
               <div className="pt-2.5">
                 <form>
                   <div className="flex flex-col gap-2.5">
@@ -819,7 +819,7 @@ const page = () => {
                     />
                     <button
                       type="submit"
-                      className="w-full flex items-center justify-center gap-3 btn btn-primary fs-18"
+                      className="w-full cursor-pointer text-dark-gray flex items-center justify-center gap-3 btn btn-primary fs-20"
                     >
                       Subscribe
                       <Image
@@ -837,15 +837,18 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* FOOTER-SECTION */}
-      {/* <section className="footer-section px-3 md:px-4 lg:px-5" id="footer">
-        <div className="container mx-auto!">
+      <section
+        className="footer-section px-3 md:px-4 lg:px-5 pt-80"
+        id="footer"
+      >
+        <div className="container mx-auto">
           <div className="flex flex-wrap gap-y-6">
             <div className="w-full lg:w-[36%] me-auto order-first">
               <div className="footer-logo-wraper">
-                <a href="/">
+                <Link href="/">
                   <Image
                     src={
                       "https://api.bioflexaesthetics.com/wp-content/uploads/2025/05/logo.svg"
@@ -856,18 +859,18 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                </a>
+                </Link>
               </div>
 
-              <p className="text-secondary-dark pt-4 fs-14">
+              <p className="pt-4 fs-14 text-gray">
                 Trusted aesthetic care powered by Canadian, FDA-approved
                 technology — available across Pakistan.
               </p>
             </div>
             <div className="lg:hidden w-full lg:w-[18%]">
-              <h5 className="text-secondary-dark font-normal">Contact Us</h5>
+              <h4 className="text-gray font-normal">Contact Us</h4>
               <div className="flex justify-start gap-5 pt-4">
-                <a
+                <Link
                   target="_blank"
                   className="social-icon"
                   href="https://www.facebook.com/bioflexaesthetics/"
@@ -880,8 +883,8 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   className="social-icon"
                   href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
@@ -894,8 +897,8 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   className="social-icon"
                   href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
@@ -908,8 +911,8 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_blank"
                   className="social-icon"
                   href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
@@ -922,11 +925,11 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="w-[50%] lg:w-[20%] pe-8">
-              <h5 className="text-secondary-dark font-normal">Information</h5>
+              <h4 className="text-gray font-normal">Information</h4>
               <ul className="pt-4 fs-14">
                 <li>
                   <Image
@@ -937,7 +940,9 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                  <a href="/">Home</a>
+                  <Link href="/" className="text-light-gray">
+                    Home
+                  </Link>
                 </li>
                 <li>
                   <Image
@@ -948,7 +953,9 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                  <a href="/about">About</a>
+                  <Link href="/about" className="text-light-gray">
+                    About
+                  </Link>
                 </li>
                 <li>
                   <Image
@@ -959,7 +966,9 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                  <a href="/services">Services</a>
+                  <Link href="/services" className="text-light-gray">
+                    Services
+                  </Link>
                 </li>
                 <li>
                   <Image
@@ -970,7 +979,9 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                  <a href="/products">Products</a>
+                  <Link href="/products" className="text-light-gray">
+                    Products
+                  </Link>
                 </li>
                 <li>
                   <Image
@@ -981,12 +992,14 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                  <a href="/articles">Articles</a>
+                  <Link href="/articles" className="text-light-gray">
+                    Articles
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="w-[50%] lg:w-[20%]">
-              <h5 className="text-secondary-dark font-normal">Useful Links</h5>
+              <h4 className="text-gray font-normal">Useful Links</h4>
               <ul className="pt-4 fs-14">
                 <li>
                   <Image
@@ -997,7 +1010,9 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                  <a href="/terms&amp;condition">Terms &amp; Condition</a>
+                  <Link href="/terms&amp;condition" className="text-light-gray">
+                    Terms &amp; Condition
+                  </Link>
                 </li>
                 <li>
                   <Image
@@ -1008,14 +1023,16 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                  <a href="/privacy">Privacy &amp; Policy</a>
+                  <Link href="/privacy" className="text-light-gray">
+                    Privacy &amp; Policy
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="hidden lg:block w-full lg:w-[18%]">
-              <h5 className="text-secondary-dark font-normal">Contact Us</h5>
+              <h4 className="text-gray font-normal">Contact Us</h4>
               <div className="flex justify-start gap-5 pt-4">
-                <a
+                <Link
                   target="_blank"
                   className="social-icon"
                   href="https://www.facebook.com/bioflexaesthetics/"
@@ -1028,12 +1045,8 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                </a>
-                <a
-                  target="_blank"
-                  className="social-icon"
-                  href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
-                >
+                </Link>
+                <Link target="_blank" className="social-icon" href="#">
                   <Image
                     src={"/images/akar-icons_facebook-fill.png"}
                     width={27}
@@ -1042,12 +1055,8 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                </a>
-                <a
-                  target="_blank"
-                  className="social-icon"
-                  href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
-                >
+                </Link>
+                <Link target="_blank" className="social-icon" href="#">
                   <Image
                     src={"/images/logos_twitter.png"}
                     width={27}
@@ -1056,12 +1065,8 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                </a>
-                <a
-                  target="_blank"
-                  className="social-icon"
-                  href="https://www.tiktok.com/@bioflexaesthetics?is_from_webapp=1&amp;sender_device=pc"
-                >
+                </Link>
+                <Link target="_blank" className="social-icon" href="#">
                   <Image
                     src={"/images/logos_linkedin-icon.png"}
                     width={27}
@@ -1070,27 +1075,42 @@ const page = () => {
                     unoptimized={true}
                     className="w-full h-full object-cover"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
-          <div className="bottom-row flex flex-wrap gap-x-2 gap-y-1 items-center justify-center">
-            <p className=" fs-14 text-secondary-dark text-center">
-              © 2025 Bioflexaesthetics. All Rights Reserved.
-            </p>
-            <p className=" fs-14 text-secondary-dark text-center">
-              Designed by
-              <a
-                className="text-blue-800 hover:text-blue-900 transition fs-14"
-                target="_blank"
-                href="https://nanolixdigital.com"
-              >
-                Nanolix Digital
-              </a>
-            </p>
+
+          <div className="bottom-row lg:flex flex-row hidden gap-y-1 items-center justify-between">
+            <div className="flex gap-16">
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-light-gray fs-14"
+                  href="#"
+                >
+                  Terms & Condition
+                </Link>
+              </div>
+              <div>
+                <Link
+                  target="_blank"
+                  className="text-light-gray fs-14"
+                  href="#"
+                >
+                  Privacy & Policy
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <p className="text-light-gray fs-14">
+                {" "}
+                © 2025 Laluna. All Rights Reserved
+              </p>
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 };
