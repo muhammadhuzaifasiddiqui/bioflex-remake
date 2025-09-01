@@ -8,7 +8,7 @@ import Marquee from "../components/Marquee";
 const page = () => {
   return (
     <>
-      {/* HERO-SECTION */}
+      {/* HERO-SECTION - */}
       <section className="hero-section px-40 pt-20">
         <div className="background-wrapper border-radius-20 relative">
           <div className="container mx-auto">
