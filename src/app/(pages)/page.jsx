@@ -10,6 +10,7 @@ const page = () => {
     <>
       {/* NAVBAR */}
       <Navbar />
+
       {/* HERO-SECTION */}
       <section className="hero-section px-40 pt-20">
         <div className="background-wrapper border-radius-20 relative">
