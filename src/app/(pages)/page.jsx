@@ -68,11 +68,11 @@ const page = () => {
                         <option value="" disabled>
                           Select Treatment
                         </option>
-                        <option value="PRP">Karachi</option>
-                        <option value="PRPG">Islamabad</option>
-                        <option value="Transplant">Peshawar</option>
-                        <option value="Hydra Facial">Rawalpindi</option>
-                        <option value="Hydra Facial">Laser Therapy</option>
+                        <option value="PRP">PRP</option>
+                        <option value="PRPG">PRPG</option>
+                        <option value="Transplant">Transplant</option>
+                        <option value="Hydra Facial">Hydra Facial</option>
+                        <option value="Meso Therapy">Meso Therapy</option>
                       </select>
 
                       <span className="absolute inset-y-0 right-3 flex items-center pointer-events-none">
@@ -125,7 +125,7 @@ const page = () => {
                   </div>
 
                   <button
-                    className="w-full btn btn-lg btn-primary cursor-pointer mt-[15px] lg:mt-[18px] py-[10px]! px-[24px]! sm:py-[14px]! sm:px-[24px]!"
+                    className="w-full btn btn-primary btn-lg cursor-pointer mt-[15px] lg:mt-[18px]"
                     type="submit"
                   >
                     Book Appointment
@@ -617,7 +617,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center w-full lg:w-[40%]">
+            <div className="flex justify-center w-full lg:w-[50%]">
               <Image
                 src={"./images/trusted-section-image.webp"}
                 width={500}
@@ -739,7 +739,7 @@ const page = () => {
       </section>
 
       {/* CONTACT-SECTION */}
-      <section
+      {/* <section
         className="contact-section px-3 md:px-4 lg:px-5 py-80"
         id="contact"
       >
@@ -837,10 +837,10 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FOOTER-SECTION */}
-      <section className="footer-section px-3 md:px-4 lg:px-5" id="footer">
+      {/* <section className="footer-section px-3 md:px-4 lg:px-5" id="footer">
         <div className="container mx-auto!">
           <div className="flex flex-wrap gap-y-6">
             <div className="w-full lg:w-[36%] me-auto order-first">
@@ -1090,7 +1090,7 @@ const page = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
