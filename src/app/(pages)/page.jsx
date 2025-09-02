@@ -8,9 +8,7 @@ import Navbar from "../components/Navbar";
 const page = () => {
   return (
     <>
-      {/* NAVBAR */}
       <Navbar />
-      {/* HERO-SECTION */}
       <section className="hero-section px-40 pt-20">
         <div className="background-wrapper border-radius-20 relative">
           <div className="container mx-auto">
@@ -137,7 +135,6 @@ const page = () => {
         </div>
       </section>
 
-      {/* SERVICE-SECTION */}
       <section className="service-section overflow-hidden py-80 px-3 sm:px-4 md:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col">
@@ -374,7 +371,6 @@ const page = () => {
         </div>
       </section>
 
-      {/* PRODUCT-SECTION */}
       <section className="product-section py-40 px-3 sm:px-4 md:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col justify-center">
@@ -571,7 +567,6 @@ const page = () => {
         </div>
       </section>
 
-      {/* TRUSTED-SECTION */}
       <section className="trusted-section py-80 px-3 sm:px-4 md:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between gap-[30px]">
@@ -631,7 +626,6 @@ const page = () => {
         </div>
       </section>
 
-      {/* BLOG-SECTION */}
       <section className="blog-section overflow-hidden px-3 sm:px-4 md:px-5">
         <div className="container mx-auto">
           <div className="flex flex-col">
@@ -654,13 +648,10 @@ const page = () => {
         </div>
       </section>
 
-      {/* BLOG-SWIPER-SECTION */}
       <Blog />
 
-      {/* BLOG-SWIPER-SECTION */}
       <Marquee />
 
-      {/* BOOK-NOW-SECTION */}
       <section className="book-now-section px-3 md:px-4 lg:px-5 py-80">
         <div className="background-wrapper w-fit mx-auto">
           <div className="container mx-auto relative pb-7 sm:pb-12.5 lg:pb-[30px]">
@@ -738,7 +729,6 @@ const page = () => {
         </div>
       </section>
 
-      {/* CONTACT-SECTION */}
       <section className="contact-section px-3 md:px-4 lg:px-5">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 xl:grid-cols-4">
@@ -836,7 +826,6 @@ const page = () => {
         </div>
       </section>
 
-      {/* FOOTER-SECTION */}
       <section className="footer-section px-3 md:px-4 lg:px-5 pt-80">
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-y-6">
