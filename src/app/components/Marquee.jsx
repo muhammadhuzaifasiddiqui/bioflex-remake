@@ -73,7 +73,7 @@ const Marquee = () => {
 
   return (
     <>
-      <section className="marquee-section" id="marquee">
+      <section className="marquee-section">
         <div className="flex flex-row">
           <Swiper
             modules={[Autoplay]}

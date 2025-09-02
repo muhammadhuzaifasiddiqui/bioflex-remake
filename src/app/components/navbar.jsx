@@ -35,7 +35,6 @@ const Navbar = () => {
     <>
       <nav
         className="navbar absolute w-full left-0 px-3 md:px-3.5 lg:px-5"
-        id="navbar"
       >
         <div className="w-full container nav-container mx-auto relative left-0">
           <div className="bg-navbar flex justify-between items-center rounded-[30px]">
@@ -53,19 +52,19 @@ const Navbar = () => {
               <Link className="fs-16 nav-link fw-normal" href="">
                 Home
               </Link>
-              <Link className="fs-16 nav-link" href="#trusted">
+              <Link className="fs-16 nav-link" href="">
                 About
               </Link>
-              <Link className="fs-16 nav-link" href="#service">
+              <Link className="fs-16 nav-link" href="">
                 Services
               </Link>
-              <Link className="fs-16 nav-link" href="#product">
+              <Link className="fs-16 nav-link" href="">
                 Products
               </Link>
-              <Link className="fs-16 nav-link" href="#blog">
+              <Link className="fs-16 nav-link" href="">
                 Locations
               </Link>
-              <Link className="fs-16 nav-link" href="#book">
+              <Link className="fs-16 nav-link" href="">
                 Articles
               </Link>
             </div>
@@ -130,7 +129,7 @@ const Navbar = () => {
               <ul className="flex flex-col items-start px-[20px] py-[10px] overflow-hidden bg-[#f4ede4f6] rounded-[12px]">
                 <li className="px-[6px] py-[10px]">
                   <Link
-                    href={"/"}
+                    href={""}
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >
@@ -139,7 +138,7 @@ const Navbar = () => {
                 </li>
                 <li className="px-[6px] py-[10px]">
                   <Link
-                    href={"/"}
+                    href={""}
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >
@@ -148,7 +147,7 @@ const Navbar = () => {
                 </li>
                 <li className="px-[6px] py-[10px]">
                   <Link
-                    href={"/"}
+                    href={""}
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >
@@ -157,7 +156,7 @@ const Navbar = () => {
                 </li>
                 <li className="px-[6px] py-[10px]">
                   <Link
-                    href={"/"}
+                    href={""}
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >
@@ -166,7 +165,7 @@ const Navbar = () => {
                 </li>
                 <li className="px-[6px] py-[10px]">
                   <Link
-                    href={"/"}
+                    href={""}
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >
@@ -175,7 +174,7 @@ const Navbar = () => {
                 </li>
                 <li className="px-[6px] py-[10px]">
                   <Link
-                    href={"/"}
+                    href={""}
                     className={""}
                     onClick={() => setIsOpen(false)}
                   >

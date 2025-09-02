@@ -661,10 +661,7 @@ const page = () => {
       <Marquee />
 
       {/* BOOK-NOW-SECTION */}
-      <section
-        className="book-now-section px-3 md:px-4 lg:px-5 py-80"
-        id="book"
-      >
+      <section className="book-now-section px-3 md:px-4 lg:px-5 py-80">
         <div className="background-wrapper w-fit mx-auto">
           <div className="container mx-auto relative pb-7 sm:pb-12.5 lg:pb-[30px]">
             <Image
@@ -742,7 +739,7 @@ const page = () => {
       </section>
 
       {/* CONTACT-SECTION */}
-      <section className="contact-section px-3 md:px-4 lg:px-5" id="contact">
+      <section className="contact-section px-3 md:px-4 lg:px-5">
         <div className="container mx-auto">
           <div className="grid grid-cols-2 xl:grid-cols-4">
             <div className="item">
@@ -840,10 +837,7 @@ const page = () => {
       </section>
 
       {/* FOOTER-SECTION */}
-      <section
-        className="footer-section px-3 md:px-4 lg:px-5 pt-80"
-        id="footer"
-      >
+      <section className="footer-section px-3 md:px-4 lg:px-5 pt-80">
         <div className="container mx-auto">
           <div className="flex flex-wrap gap-y-6">
             <div className="w-full lg:w-[36%] me-auto order-first">
