@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
@@ -111,7 +112,6 @@ const Navbar = () => {
                   unoptimized={true}
                   className="w-full! h-full! object-cover"
                 />
-
               </button>
             </div>
           </div>
