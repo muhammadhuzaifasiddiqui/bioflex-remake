@@ -50,24 +50,24 @@ const Navbar = () => {
               />
             </div>
             <div className="lg:flex hidden navbar-menu items-center justify-center gap-2 xl:gap-8">
-              <a className="fs-16 nav-link fw-normal" href="">
+              <Link className="fs-16 nav-link fw-normal" href="">
                 Home
-              </a>
-              <a className="fs-16 nav-link" href="#trusted">
+              </Link>
+              <Link className="fs-16 nav-link" href="#trusted">
                 About
-              </a>
-              <a className="fs-16 nav-link" href="#service">
+              </Link>
+              <Link className="fs-16 nav-link" href="#service">
                 Services
-              </a>
-              <a className="fs-16 nav-link" href="#product">
+              </Link>
+              <Link className="fs-16 nav-link" href="#product">
                 Products
-              </a>
-              <a className="fs-16 nav-link" href="#blog">
+              </Link>
+              <Link className="fs-16 nav-link" href="#blog">
                 Locations
-              </a>
-              <a className="fs-16 nav-link" href="#book">
+              </Link>
+              <Link className="fs-16 nav-link" href="#book">
                 Articles
-              </a>
+              </Link>
             </div>
 
             <div className="lg:flex hidden navbar-button gap-2">
@@ -91,9 +91,9 @@ const Navbar = () => {
                   className="w-full! h-full! object-cover cursor-pointer"
                 />
               </div>
-              <a href="#" className="btn btn-primary btn-sm fs-14">
+              <Link href="#" className="btn btn-primary btn-sm fs-14">
                 Login
-              </a>
+              </Link>
             </div>
 
             <div className="lg:hidden flex items-center">
