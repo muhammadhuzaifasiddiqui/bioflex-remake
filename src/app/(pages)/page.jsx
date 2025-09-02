@@ -1,16 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
 import Blog from "../components/Blog";
 import Marquee from "../components/Marquee";
+import Navbar from "../components/Navbar";
 
 const page = () => {
   return (
     <>
       {/* NAVBAR */}
       <Navbar />
-      
       {/* HERO-SECTION */}
       <section className="hero-section px-40 pt-20">
         <div className="background-wrapper border-radius-20 relative">
